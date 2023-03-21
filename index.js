@@ -109,7 +109,7 @@ ${answers.test}
 ## Questions
 
 For questions, bugs or issues, you may reach me at ${answers.email}. 
-You can check out my other work at ${answers.github}.
+You can check out my other work at https://github.com/${answers.github}.
 
 
 ## 🔗 Link to GitHub Repo Page

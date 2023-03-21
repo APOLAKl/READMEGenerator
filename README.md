@@ -37,7 +37,7 @@ This project is licensed under Apache2.0 license.
 
 ## Contributing
 
-If you want to contribute, feel free to email me at chad@email.com.
+If you want to contribute, feel free to email me at Chadzee@email.com.
 
 ## Tests
 
@@ -50,9 +50,9 @@ npm test
 
 ## Questions
 
-For questions, bugs or issues, you may reach me at chad@email.com. 
-You can check out my other work at APOLAKl.
+For questions, bugs or issues, you may reach me at Chadzee@email.com. 
+You can check out my other work at https://github.com/APOLAKl.
 
 
 ## 🔗 Link to GitHub Repo Page
-https://github.com/APOLAKl/READMEGenerator  [![APOLAKl Repo Page]
+https://github.com/APOLAKl/READMEGenerator  [![APOLAKl Repo Page]]
