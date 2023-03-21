@@ -14,6 +14,11 @@ function init() {
     },
     {
       type: 'input',
+      name: 'github',
+      message: 'What is your GitHub username?',
+    },
+    {
+      type: 'input',
       name: 'title',
       message: 'Give a Title to your Project?',
     },
@@ -25,8 +30,8 @@ function init() {
     {
       type: 'input',
       name: 'installation',
-      message: 'Give a brief installation representation of your Project?',
-      default: 'npm i',
+      message: 'Code to install required NPM?',
+      default: 'npm i inquirer@8.2.4',
     },
     {
       type: 'input',
@@ -34,40 +39,36 @@ function init() {
       message: 'Give a brief usage information of your Project?',
     },
     {
+      type: 'input',
+      name: 'contributing',
+      message: 'How can users contribute to the Repo?',
+    },
+    {
+      type: 'input',
+      name: 'test',
+      message: 'Code to test your Project?',
+      default: 'npm test',
+    },
+    {
       type: 'list',
       name: 'license',
       message: 'What license does your project have?',
       choices: [
         "MIT",
-        "Apache 2.0",
+        "Apache2.0",
         "Mozilla",
-        "GPL 3.0",
-        "BSD 3",
+        "GPL3.0",
+        "BSD3",
       ]
     },
-    {
-      type: 'input',
-      name: 'contributing',
-      message: 'Give a contribution guidelines of your Project?',
-    },
-    {
-      type: 'input',
-      name: 'test',
-      message: 'Command to run test of your Project?',
-      default: 'npm test',
-    },
-    {
-      type: 'input',
-      name: 'github',
-      message: 'What is your GitHub username?',
-    },
-
+    
   ])
   .then((answers) => {
     console.log(answers)
 
 
-    const badge = `![License: ${answers.license}](https://img.shields.io/static/v1?label=license&message=${answers.license}&color=green)`;
+    // const badge = `![License: ${answers.license}](https://img.shields.io/static/v1?label=license&message=${answers.license}&color=green)`;
+    const badge = `![License: ${answers.license}](https://img.shields.io/badge/license-${answers.license}-green)`;
 
 
     const readmeText = `
@@ -97,12 +98,17 @@ ${answers.description}
 
 ## Installation
 
-\`\`\`
+\`
 ${answers.installation}
-\`\`\`
+\`
 
 ## Usage
+
 ${answers.usage}
+
+## License
+
+This project is licensed under ${answers.license} license.;
 
 ## Contributing
 
@@ -112,13 +118,10 @@ ${answers.contributing}
 
 Run command to test:
 
-\`\`\`
+\`
 ${answers.test}
-\`\`\`
+\`
 
-## License
-
-This project is licensed under ${answers.license} license.;
 
 ## Questions
 
