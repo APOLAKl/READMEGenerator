@@ -1,3 +1,5 @@
 node_modules
 Week9README.md
 .DS_Store
+utils
+generateMarkdown.js

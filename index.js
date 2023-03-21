@@ -113,7 +113,7 @@ You can check out my other work at ${answers.github}.
 
 
 ## 🔗 Link to GitHub Repo Page
-https://github.com/${answers.github}/${answers.title}  [![${answers.github} Repo Page]
+https://github.com/${answers.github}/${answers.title}  [![${answers.github} Repo Page]]
 `;
 
       // function to write README file
